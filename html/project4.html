@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Genre Finder</title>
+    /css/styles.css">
+</head>
+<body>
+
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <nav class="navbar" aria-label="Main navigation">
+        <ul class="nav-listst">
+            ><a href="../index.html">Home</a></l/li>
+            ><a href="../html/project2.html">Project 2</a></l/li>
+            ><a href="../html/project3.html">Project 3</a></l/li>
+            ><a href="project4.html">Project 4</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Genre Finder</h1>
+        <p>
+            Not every player enjoys the same type of game. Some people enjoy competititive games,
+            some want story filled games, and others maybe like games with a bunch of exploration. This page helps match
+            a player with a game genre based on their preferences.
+        </p>
+    </header>
+
+    <main id="main-content" class="page-content">
+
+        <section class="card">
+            <h2>Why Genres Matter</h2>
+            <p>
+                Game genres help players find experiences that match their interests. A person who
+                enjoys action and pressure may prefer shooters like: Call Of Duty, or Rainbow Six Siege, while someone who likes world-building
+                and slower progress may enjoy role-playing or survival games like: Minecraft or Terraria.
+            </p>
+            <p>
+                Understanding genres can make makes it 10x easier to choose what to play next, and it may even open you up to new types of games you maybe did not find interesting before.
+            </p>
+        </section>
+
+        <section class="card genre-layout">
+            <div>
+                <h2>Popular Genres</h2>
+                <ul class="styled-listst">
+                    >Action shooter games which focus on speed and reaction time and strategical thinking..</l/li>
+                    >Role playing games which focus oncharacter growth and story and being who you want to be.</l/li>
+                    >Survival games which are based on exploration, planning, and resource management.</l/li>
+                    >Horror games which are focused on tension, atmosphere, and suspense.</li>
+                </ul>
+
+                <p>
+                    Each genre offers a different kind of experience, and while there are tons of genres the ones above are the most common ones.
+                </p>
+            </div>
+
+            <div>
+                <img src="../images/genres.jpg"
+                     alt="A picutre representing different gaming genres"
+                     width="800"
+                     height="500"
+                     loading="lazy"
+                     decoding="async">
+
+                <p class="image-credit">
+                    A picture of all kinds of gaming genres. Provided by OnlineDesignTeacher.
+                </p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Find Your Genre</h2>
+            <p>
+                Fill out the form below to get a genre suggestion based on your gaming preferences.
+            </p>
+
+            <form id="genre-form">
+                <div class="form-group">
+                    abel for="player-name">Your name</label>
+                    <input type="text" id="player-name" name="player-name" required>
+                </div>
+
+                <div class="form-group">
+                    abel for="pace">Preferred pace</label>
+                    <select id="pace" name="pace">
+                        <option value="fast">Fast paced games</option>
+                        <option value="balanced">Balanced pace</option>
+                        <option value="slow">Slow pace</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    abel for="focus">What matters most to you?</label>
+                    <select id="focus" name="focus">
+                        <option value="competition">Competition</option>
+                        <option value="story">Story</option>
+                        <option value="exploration">Exploration</option>
+                        <option value="fear">Thrill and Suspense</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="button-link">Find My Genre</button>
+            </form>
+
+            <div id="genre-result" class="result-box" aria-live="polite"></div>
+        </section>
+
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
