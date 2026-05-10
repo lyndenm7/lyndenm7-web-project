@@ -1,8 +1,14 @@
+console.log("script loaded");
+
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("genre-form");
     const result = document.getElementById("genre-result");
 
+    console.log("form:", form);
+    console.log("result:", result);
+
     if (!form || !result) {
+        console.log("form or result element not found");
         return;
     }
 
@@ -12,6 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const name = document.getElementById("player-name").value.trim();
         const pace = document.getElementById("pace").value;
         const focus = document.getElementById("focus").value;
+
+        console.log("name:", name);
+        console.log("pace:", pace);
+        console.log("focus:", focus);
 
         let genre = "";
         let message = "";
@@ -34,5 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         result.textContent = message;
+        console.log("result written:", message);
     });
 });
